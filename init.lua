@@ -24,14 +24,10 @@ return {
   diagnostics = {
     virtual_text = true,
     underline = true,
+    update_in_insert = false,
   },
 
   lsp = {
-    diagnostic = {
-      on_publish_diagnostics = {
-        virtual_text = false,
-      },
-    },
     -- customize lsp formatting options
     formatting = {
       -- control auto formatting on save
