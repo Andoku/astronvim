@@ -22,6 +22,8 @@ return {
     ["<C-f>"] = { "<leader>ff", desc = "Find files" },
     ["<C-g>"] = { "<leader>fw", desc = "Find words" },
     ["<C-b>"] = { "<leader>fb", desc = "Find buffers" },
+    -- switch between .cpp and .h files
+    ["<leader>s"] = { "<cmd>ClangdSwitchSourceHeader<cr>" },
   },
   t = {
     -- setting a mapping to false will disable it
