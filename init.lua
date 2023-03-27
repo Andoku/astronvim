@@ -19,17 +19,6 @@ return {
 
   -- Set colorscheme to use
   colorscheme = "catppuccin",
-  plugins = {
-    {
-      "catppuccin/nvim",
-      as = "catppuccin",
-      config = function()
-        require("catppuccin").setup {
-          no_italic = true,
-        }
-      end,
-    },
-  },
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
