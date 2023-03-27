@@ -19,7 +19,7 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
 
-    ["<C-f>"] = { "<leader>ff", desc = "Find files" },
+    ["<C-f>"] = [ "<leader>ff" ],
     ["<C-g>"] = { "<leader>fw", desc = "Find words" },
     ["<C-b>"] = { "<leader>fb", desc = "Find buffers" },
     -- switch between .cpp and .h files
