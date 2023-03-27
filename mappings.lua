@@ -19,9 +19,10 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
 
-    ["<C-f>"] = [ "<leader>ff" ],
-    ["<C-g>"] = { "<leader>fw", desc = "Find words" },
-    ["<C-b>"] = { "<leader>fb", desc = "Find buffers" },
+    ["<C-f>"] = { function() require("telescope.builtin").find_files() end, desc = "Find files" },
+    ["<C-g>"] = { function() require("telescope.builtin").live_grep() end, desc = "Find words" },
+    ["<C-b>"] = { function() require("telescope.builtin").buffers() end, desc = "Find buffers" },
+    
     -- switch between .cpp and .h files
     ["<leader>s"] = { "<cmd>ClangdSwitchSourceHeader<cr>" },
   },
