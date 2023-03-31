@@ -4,6 +4,15 @@ A user configuration template for [AstroNvim](https://github.com/AstroNvim/Astro
 
 ## 🛠️ Installation
 
+#### Install Neovim
+
+```shell
+wget https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.deb
+sudo dpkg -i nvim-linux64.deb
+rm nvim-linux64.deb
+sudo apt install ripgrep
+```
+
 #### Make a backup of your current nvim and shared folder
 
 ```shell
